@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target":"esnext", //.js로 변환할때 버전설정
+    "module":"esnext", //모듈을 어떤방식으로 불러올지 설정
+    "outDir": "dist", //컴파일된 파일이 저장될 위치
+    "strict": true, //엄격한 타입검사
+    "moduleDetection": "force", //모듈 감지 강제 설정
+    "skipLibCheck": true,
+   }, //라이브러리 파일의 타입검사 건너뛰기},
+  "ts-node": {
+    "esm": true //ts-node에서 ESM 모듈 사용 설정
+  },
+  "include": ["src"], //컴파일할 파일들이 있는 폴더
+}
