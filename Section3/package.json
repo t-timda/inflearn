@@ -2,7 +2,11 @@
   "name": "section3",
   "version": "1.0.0",
   "main": "index.js",
+<<<<<<< HEAD
   "type": "module",
+=======
+  "type":"module",
+>>>>>>> e47ef0036ce69a443f961cc1d6d568ce918cd976
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

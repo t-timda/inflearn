@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 //tsconfig.json
+=======
+>>>>>>> e47ef0036ce69a443f961cc1d6d568ce918cd976
 {
     "include": ["src"],
     "compilerOptions": {
@@ -6,7 +9,10 @@
         "module": "esnext",
         "outDir": "dist",
         "strict": true,
+<<<<<<< HEAD
         "strictNullChecks": false, //strict 옵션이 켜져있을때 null, undefined 체크를 비활성화
+=======
+>>>>>>> e47ef0036ce69a443f961cc1d6d568ce918cd976
         "moduleDetection": "force",
         "skipLibCheck": true
     },
