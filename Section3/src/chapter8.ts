@@ -18,6 +18,7 @@ type Guest={
     name:string;
     visitCount:number;
 }
+//tag를 추가하면 각각의 타입이 모두 서로소 관계가 됨
 
 type User = Admin | Member | Guest;
 
@@ -37,7 +38,7 @@ function login(user:User){
     }
 }
 
-
+//tag를 추가하여 login1과는 다르게 좀 더 직관적으로 코드해석이 가능
 function login2(user:User){
     switch(user.tag){
         case "ADMIN" : {

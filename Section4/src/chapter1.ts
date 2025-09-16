@@ -11,6 +11,7 @@ const divide : (a:number, b:number) => number = (a,b) => a/b;
 
 type Operation2 = {
     (a:number, b:number):number;
+    name:string; //하이브리드 타입도 가능.. 그냥 참고 정도
 };
 
 const add2: Operation2 = (a,b) => a+b;

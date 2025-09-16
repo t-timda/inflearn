@@ -7,13 +7,10 @@ interface CharacterInterface{
 }
 
 class Character implements CharacterInterface{
-    name: string;
-    moveSpeed : number;
+    //생성자에서 필드 정의 및 생성
 
-    constructor(name: string, moveSpeed:number){
-        this.name=name;
-        this.moveSpeed=moveSpeed;
-    }
+    constructor(public name: string, public moveSpeed:number){
+    } //단 인터페이스는 무조건 public 이므로 private, protected 불가
 
     move():void{
         console.log(`${this.moveSpeed} 속도로 이동`);
