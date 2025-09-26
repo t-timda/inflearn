@@ -26,3 +26,39 @@ let animal:Animal={
     name:'cat',
     colr:'black'
 }
+
+animal = dog; //Dog타입은 Animal타입에 할당 가능
+// dog = animal; //Animal타입은 Dog타입에 할당 불가능
+
+type Book={
+    title:string
+    price:number
+}
+
+type Magazine={
+    title:string
+    price:number
+    month:string
+}
+
+let book:Book={
+    title:'책',
+    price:20000
+}
+
+let magazine:Magazine={
+    title:'잡지',
+    price:5000,
+    month:'10월'
+}
+
+//초과 프로퍼티 검사
+book = magazine; //Magazine타입은 Book타입에 할당 가능
+// magazine = book; //Book타입은 Magazine타입에 할당 불가능
+
+let book2:Book={
+    title:'책',
+    price:20000,
+    //month:'10월' //초과 프로퍼티 검사로 인해 에러 발생
+}
+
